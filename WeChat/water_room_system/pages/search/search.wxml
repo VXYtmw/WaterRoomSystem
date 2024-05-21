@@ -1,0 +1,36 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <input placeholder="请输入开水房ID" bindinput="inputChange" value="{{inputValue}}" />
+    <button bindtap="search">搜索</button>
+  </view>
+
+  <!-- 结果显示栏 -->
+  <view class="result">
+    <!-- 表格 -->
+    <view wx:if="{{requestStatus}}" class="table">
+      <!-- 第一行 -->
+      <view class="row">
+        <!-- 第一列 -->
+        <view class="cell">就绪状态</view>
+        <!-- 第二列 -->
+        <view class="cell">排队人数/人</view>
+      </view>
+      <!-- 第二行 -->
+      <view class="row">
+        <!-- 第一列 -->
+        <view class="cell">
+          <view wx:if="{{status}}">就绪</view>
+          <view wx:else>加热</view>
+        </view>
+        <!-- 第二列 -->
+        <view class="cell">{{number}}</view>
+      </view>
+    </view>
+
+    <block wx:else>
+      <view>暂无结果</view>
+    </block>
+  </view>
+</view>

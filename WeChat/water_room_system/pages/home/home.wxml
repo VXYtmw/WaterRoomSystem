@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="title">信息一览</view>
+</view>
+
+<view class="table">
+  <view class="row header">
+    <text class="cell">开水房ID</text>
+    <text class="cell">就绪状态</text>
+    <text class="cell">排队人数/人</text>
+  </view>
+  <block wx:for="{{results}}" wx:key="id">
+    <view class="row">
+      <text class="cell">{{item.id}}</text>
+      <text class="cell">{{item.status ? "就绪" : "加热"}}</text>
+      <text class="cell">{{item.number}}</text>
+    </view>
+  </block>
+</view>
+

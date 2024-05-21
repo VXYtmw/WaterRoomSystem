@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5c99ee",
+    "navigationBarTitleText": "开水房物联网系统"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#aeccf7",
+    "selectedColor": "#9650a3",
+    "list": [{
+        "selectedIconPath": "/icons/icon-home-active.png",
+        "iconPath": "/icons/icon-home-inactive.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+    },{
+        "selectedIconPath": "/icons/icon-find-active.png",
+        "iconPath": "/icons/icon-find-inactive.png",
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+    }]
+  }
+}

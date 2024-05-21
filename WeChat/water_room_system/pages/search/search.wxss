@@ -1,0 +1,49 @@
+/* pages/search/search.wxss */
+.container {
+  padding-top: 300rpx;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 10rpx;
+  border: 1px solid #ccc;
+  border-radius: 5rpx;
+}
+
+.search-bar button {
+  width: 25%;
+  padding: 10rpx;
+  background-color: #93aabc;
+  color: #fff;
+  border: none;
+  border-radius: 5rpx;
+}
+
+.result {
+  border: 1px solid #ccc;
+  padding: 20rpx;
+  border-radius: 5rpx;
+}
+
+.table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  flex: 1;
+  padding: 30rpx;
+  text-align: center;
+}
